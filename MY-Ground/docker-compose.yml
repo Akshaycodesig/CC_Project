@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  
+
+  producer:
+    build:
+      context: ./producer
+      dockerfile: Dockerfile
+    container_name: producer
+    ports:
+      - "5001:5001"

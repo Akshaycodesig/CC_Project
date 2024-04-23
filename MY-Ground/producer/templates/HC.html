@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        h1{
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h3{
+            position: relative;
+            top: 20px;
+        }
+        .navbar{
+            list-style-type: none;
+            background-color: black;
+            padding: 30px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .navbar a{
+            color : white;
+            text-decoration: none;
+            margin-left: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: grey;
+
+        }
+
+        #home{
+            position: absolute;
+
+        }
+        #HC{
+            position: absolute;
+            left: 300px;
+
+        }
+        #SM{
+            position: absolute;
+            left: 600px;
+
+        }
+        #IC{
+            position: absolute;
+            left: 900px;
+
+        }
+        #OP{
+            position: absolute;
+            left: 1200px;
+        }
+
+        .grid{
+
+            position: relative;
+            top: 100px;
+            left: 350px;
+            background-color: rgba(255, 255, 255, 0.926);
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+            height: 400px;
+            width: 800px;
+            padding-top: 50px;
+        }
+        .button {
+
+            position: relative;
+            top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #4CAF50;
+            color: #4CAF50;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+          }
+          
+          .button:hover {
+            background-color: #4CAF50;
+            color: white;
+          }
+          
+          body{
+            background-image: url('https://wallpapercave.com/wp/wp8114669.jpg');
+            background-size: cover;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class= "navbar">
+        <a id="home" href = "/">Home</a>
+        <a id="HC" href = "/HealthCheck">Heath Check</a>
+        <a id="SM" href = "/StockManagement">Stock Management</a>
+        <a id="IC" href = "/ItemCreation">Item Creation</a>
+        <a id="OP" href="/OrderProcessing">OrderProcessing</a> 
+        
+    </nav >
+    
+    <form class = "grid" action ="/result" method = "POSR">
+        <h1> Click to Check the Health </h1>
+        <center><input type="Submit" value="Check" class="button"></center>
+        <center>
+            {% if name%}
+            <h3>Health Status Added to Queue</h3?>
+            {% endif %}
+        </center>
+    
+    
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: black;
+            padding: 30px;
+            margin: 0px;
+            overflow: hidden;
+        }
+        .navbar a{
+            color : white;
+            text-decoration: none;
+            margin-left: 60px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: grey;
+
+        }
+        .navbar li{
+            float: left;
+        }
+        a{
+            pointer-events: none;
+            cursor: default;
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+    <nav class= "navbar">
+        
+        <ul>
+            <li><a href = "">Home</li>
+            <li><a href = "">Heath Check</li>
+            <li><a href = "">Stock Management</li>
+            <li><a href = "">Item Creation</li>
+            <li><a href = "">Order Processing</li>
+        </ul>
+    </nav >
+
+    <h1>Inventory Management</h1>
+
+    <form class = "grid" action ="/result" method = "POSR">
+        <center><input type="Submit" class="health_but"></center>
+        <center>
+            {% if name%}
+            <h3>Health Check</h3?>
+            {% endif %}
+        </center>
+    
+    <form class = "grid" action ="/ItemCreation" method = "POSR">
+        <center>
+            <label>Name : </label>
+            <input type="text" name="name">
+        </center>
+        <center>
+            <label>Type : </label>
+            <input type="text" name="type">
+        </center>
+        <center>
+            <label>Price : </label>
+            <input type="text" name="price">
+        </center>
+        <center><input type="Submit" class="health_but"></center>
+        <center>
+            {% if name%}
+            <h3>Item Created</h3?>
+            {% endif %}
+        </center>
+</body>
+</html>
